@@ -4,6 +4,8 @@ import func.corefiles.corePeliculas as cf
 
 opcPelis = ["Agregar pelicula","Editar pelicula","Eliminar pelicula","Eliminar actor","Buscar Pelicula","Listar peliculas","Volver"]
 
+peliculas = {}
+
 def MenuPeliculas():
     IsActivePeli = True
     header = '''
@@ -31,4 +33,38 @@ def MenuPeliculas():
                     **********************
                 '''
 
-                pass
+                nombre = input("[-] Ingrese el nombre de la pelicula: ")
+                duracion = input("[-] Ingrese el duracion de la pelicula: ")
+                sinopsis = input("[-] Ingrese el sinopsis de la pelicula: ")
+
+                pelicula = {
+                    'id':'',
+                    'nombre':nombre,
+                    "duracion":duracion,
+                    'sinopsis':sinopsis,
+                    'generos':{},
+                    'actores':{},
+                    'formatos':{}
+                }
+                idAu = str(f"A0{len(data)+1}")
+                    
+                pelicula["id"] = idAu
+
+                peliculas.update(pelicula)
+                pl.New(pelicula)
+
+                isActiveRegGenero = True
+                while isActiveRegGenero:
+                    os.system("cls")
+                    print("*************")
+                    print("REGISTRO GENERO")
+
+
+                    genero = {
+                        'id': '',
+                        'nombre':nombre
+                    }
+                    isActiveRegGenero = False
+
+
+                    

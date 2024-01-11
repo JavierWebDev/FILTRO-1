@@ -1,0 +1,14 @@
+{
+    "blockbuster": {
+        "peliculas": {}
+    },
+    "A02": {
+        "id": "A02",
+        "nombre": "Aaaa",
+        "duracion": "aaa",
+        "sinopsis": "aa",
+        "generos": {},
+        "actores": {},
+        "formatos": {}
+    }
+}
